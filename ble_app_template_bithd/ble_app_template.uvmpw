@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>WorkSpace</WorkspaceName>
+
+  <project>
+    <PathAndName>.\pca10028\s110\arm4\ble_app_template_s110_pca10028.uvproj</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+    <NodeIsExpanded>1</NodeIsExpanded>
+  </project>
+
+  <Sle7>
+    <Apps>
+      <bAna>0</bAna>
+      <nLevel>0</nLevel>
+    </Apps>
+    <Apps>
+      <bAna>0</bAna>
+      <nLevel>0</nLevel>
+    </Apps>
+    <Apps>
+      <bAna>0</bAna>
+      <nLevel>0</nLevel>
+    </Apps>
+    <Apps>
+      <bAna>0</bAna>
+      <nLevel>0</nLevel>
+    </Apps>
+    <Apps>
+      <bAna>0</bAna>
+      <nLevel>0</nLevel>
+    </Apps>
+    <Apps>
+      <bAna>0</bAna>
+      <nLevel>0</nLevel>
+    </Apps>
+    <ExecApp></ExecApp>
+    <CfgApp></CfgApp>
+    <bHex>0</bHex>
+    <bList>0</bList>
+    <buGlb>0</buGlb>
+    <bCase>0</bCase>
+    <szMisc></szMisc>
+  </Sle7>
+
+</ProjectWorkspace>

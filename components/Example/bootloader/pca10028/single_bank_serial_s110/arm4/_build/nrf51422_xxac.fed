@@ -1,0 +1,110 @@
+;#<FEEDBACK># ARM Linker, 5.03 [Build 76]: Last Updated: Wed Jan 24 16:43:07 2018
+;VERSION 0.2
+;FILE app_error.o
+__asm___11_app_error_c_94ae794d____REV16 <= USED 0
+__asm___11_app_error_c_94ae794d____REVSH <= USED 0
+;FILE app_scheduler.o
+__asm___15_app_scheduler_c_d997b682____REV16 <= USED 0
+__asm___15_app_scheduler_c_d997b682____REVSH <= USED 0
+;FILE app_timer.o
+__asm___11_app_timer_c_cd27f9c3____REV16 <= USED 0
+__asm___11_app_timer_c_cd27f9c3____REVSH <= USED 0
+app_timer_cnt_diff_compute <= USED 0
+app_timer_cnt_get <= USED 0
+app_timer_stop_all <= USED 0
+;FILE app_timer_appsh.o
+;FILE app_uart.o
+__asm___10_app_uart_c_9ac9bdbb____REV16 <= USED 0
+__asm___10_app_uart_c_9ac9bdbb____REVSH <= USED 0
+app_uart_flush <= USED 0
+app_uart_get <= USED 0
+app_uart_get_connection_state <= USED 0
+app_uart_init <= USED 0
+;FILE arm_startup_nrf51.o
+;FILE ble_advdata.o
+ble_advdata_set <= USED 0
+;FILE ble_conn_params.o
+ble_conn_params_change_conn_params <= USED 0
+ble_conn_params_init <= USED 0
+ble_conn_params_on_ble_evt <= USED 0
+ble_conn_params_stop <= USED 0
+;FILE ble_srv_common.o
+ble_srv_ascii_to_utf8 <= USED 0
+ble_srv_report_ref_encode <= USED 0
+characteristic_add <= USED 0
+;FILE bootloader.o
+__asm___12_bootloader_c_cc6fb980____REV16 <= USED 0
+__asm___12_bootloader_c_cc6fb980____REVSH <= USED 0
+__asm___12_bootloader_c_cc6fb980__nrf_delay_us <= USED 0
+;FILE bootloader_settings.o
+__asm___21_bootloader_settings_c_bdb7f6cd____REV16 <= USED 0
+__asm___21_bootloader_settings_c_bdb7f6cd____REVSH <= USED 0
+;FILE bootloader_util.o
+;FILE crc16.o
+;FILE dfu_init_template.o
+__asm___19_dfu_init_template_c_596f785c____REV16 <= USED 0
+__asm___19_dfu_init_template_c_596f785c____REVSH <= USED 0
+;FILE dfu_single_bank.o
+__asm___17_dfu_single_bank_c_3a65ea97____REV16 <= USED 0
+__asm___17_dfu_single_bank_c_3a65ea97____REVSH <= USED 0
+dfu_reset <= USED 0
+offset_calculate <= USED 0
+;FILE dfu_transport_serial.o
+__asm___22_dfu_transport_serial_c_f06f784b____REV16 <= USED 0
+__asm___22_dfu_transport_serial_c_f06f784b____REVSH <= USED 0
+;FILE hci_mem_pool.o
+hci_mem_pool_tx_alloc <= USED 0
+hci_mem_pool_tx_free <= USED 0
+;FILE hci_slip.o
+__asm___10_hci_slip_c_b2b4ccec____REV16 <= USED 0
+__asm___10_hci_slip_c_b2b4ccec____REVSH <= USED 0
+;FILE hci_transport.o
+hci_transport_pkt_write <= USED 0
+hci_transport_tx_alloc <= USED 0
+hci_transport_tx_done_register <= USED 0
+hci_transport_tx_free <= USED 0
+;FILE main.o
+__asm___6_main_c_48b9ef9b____REV16 <= USED 0
+__asm___6_main_c_48b9ef9b____REVSH <= USED 0
+;FILE nrf_delay.o
+__asm___11_nrf_delay_c_532987f3____REV16 <= USED 0
+__asm___11_nrf_delay_c_532987f3____REVSH <= USED 0
+;FILE nrf_drv_common.o
+__asm___16_nrf_drv_common_c_68d8f45c____REV16 <= USED 0
+__asm___16_nrf_drv_common_c_68d8f45c____REVSH <= USED 0
+nrf_drv_common_irq_enable <= USED 0
+;FILE nrf_drv_gpiote.o
+__asm___16_nrf_drv_gpiote_c_875a4e72____REV16 <= USED 0
+__asm___16_nrf_drv_gpiote_c_875a4e72____REVSH <= USED 0
+nrf_drv_gpiote_in_event_addr_get <= USED 0
+nrf_drv_gpiote_in_event_enable <= USED 0
+nrf_drv_gpiote_in_init <= USED 0
+nrf_drv_gpiote_init <= USED 0
+nrf_drv_gpiote_is_init <= USED 0
+nrf_drv_gpiote_out_clear <= USED 0
+nrf_drv_gpiote_out_init <= USED 0
+nrf_drv_gpiote_out_set <= USED 0
+nrf_drv_gpiote_out_task_addr_get <= USED 0
+nrf_drv_gpiote_out_task_disable <= USED 0
+nrf_drv_gpiote_out_task_enable <= USED 0
+nrf_drv_gpiote_out_task_force <= USED 0
+nrf_drv_gpiote_out_task_trigger <= USED 0
+nrf_drv_gpiote_out_toggle <= USED 0
+nrf_drv_gpiote_out_uninit <= USED 0
+nrf_drv_gpiote_uninit <= USED 0
+;FILE pstorage_raw.o
+__asm___14_pstorage_raw_c_1dab5049____REV16 <= USED 0
+__asm___14_pstorage_raw_c_1dab5049____REVSH <= USED 0
+pstorage_block_identifier_get <= USED 0
+;FILE softdevice_handler.o
+__asm___20_softdevice_handler_c_370b0038____REV16 <= USED 0
+__asm___20_softdevice_handler_c_370b0038____REVSH <= USED 0
+softdevice_ble_evt_handler_set <= USED 0
+softdevice_handler_sd_disable <= USED 0
+;FILE softdevice_handler_appsh.o
+__asm___26_softdevice_handler_appsh_c_48b0e533____REV16 <= USED 0
+__asm___26_softdevice_handler_appsh_c_48b0e533____REVSH <= USED 0
+;FILE system_nrf51.o
+SystemCoreClockUpdate <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REV16 <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REVSH <= USED 0

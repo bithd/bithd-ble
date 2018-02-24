@@ -1,0 +1,571 @@
+Dependencies for Project 'dfu_single_bank_serial_s110_pca10028', Target 'nrf51422_xxac': (DO NOT MODIFY !)
+F (..\..\..\main.c)(0x5A69B3AA)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_transport.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_types.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_types.h)(0x5A685D4A)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_util.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_gpio.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_ranges.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_types.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_l2cap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_err.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatt.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gattc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatts.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_hci.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\scheduler\app_scheduler.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer_appsh.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\pstorage_platform.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_mbr.h)(0x58EC3FD2)
+F (..\..\..\..\..\..\components\toolchain\arm\arm_startup_nrf51.s)(0x58EC3FCD)(--cpu Cortex-M0 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--pd "BLE_STACK_SUPPORT_REQD SETA 1" --pd "__HEAP_SIZE SETA 0" --pd "BOARD_PCA10028 SETA 1" --pd "S110 SETA 1" --pd "BSP_DEFINES_ONLY SETA 1" --pd "NRF51 SETA 1" --pd "SOFTDEVICE_PRESENT SETA 1" --pd "SWI_DISABLE0 SETA 1" --list .\_build\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
+F (..\..\..\..\..\..\components\toolchain\system_nrf51.c)(0x58EC3FCD)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+F (..\..\..\Abstract.txt)(0x58EC3FCF)()
+F (..\..\..\license.txt)(0x58EC3FCF)()
+F (..\..\..\..\..\..\components\ble\common\ble_advdata.c)(0x58EC3FCE)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
+I (C:\wangnan\SVN\51822_COS\components\ble\common\ble_advdata.h)(0x58EC3FCE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_ranges.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_types.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_l2cap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_err.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatt.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gattc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatts.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\ble\common\ble_srv_common.h)(0x58EC3FCE)
+F (..\..\..\..\..\..\components\ble\common\ble_conn_params.c)(0x5A69B6E3)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
+I (C:\wangnan\SVN\51822_COS\components\ble\common\ble_conn_params.h)(0x58EC3FCE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_ranges.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_types.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_l2cap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_err.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatt.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gattc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatts.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\ble\common\ble_srv_common.h)(0x58EC3FCE)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_hci.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+F (..\..\..\..\..\..\components\ble\common\ble_srv_common.c)(0x58EC3FCE)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
+I (C:\wangnan\SVN\51822_COS\components\ble\common\ble_srv_common.h)(0x58EC3FCE)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_types.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_ranges.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_l2cap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_err.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatt.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gattc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatts.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+F (..\..\..\..\..\..\components\drivers_nrf\uart\app_uart.c)(0x58EC3FCF)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\app_uart.o --omf_browse .\_build\app_uart.crf --depend .\_build\app_uart.d)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\uart\app_uart.h)(0x58EC3FCF)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util_platform.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_gpio.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\gpiote\nrf_drv_gpiote.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_gpiote.h)(0x58EC3FCE)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\nrf_drv_config.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\sdk_errors.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\drivers_nrf\hal\nrf_delay.c)(0x58EC3FCF)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\nrf_delay.o --omf_browse .\_build\nrf_delay.crf --depend .\_build\nrf_delay.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_delay.h)(0x58EC3FCF)
+F (..\..\..\..\..\..\components\drivers_nrf\common\nrf_drv_common.c)(0x58EC3FCE)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\nrf_drv_common.o --omf_browse .\_build\nrf_drv_common.crf --depend .\_build\nrf_drv_common.d)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\common\nrf_drv_common.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nrf_assert.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+F (..\..\..\..\..\..\components\drivers_nrf\gpiote\nrf_drv_gpiote.c)(0x58EC3FCE)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\nrf_drv_gpiote.o --omf_browse .\_build\nrf_drv_gpiote.crf --depend .\_build\nrf_drv_gpiote.d)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\gpiote\nrf_drv_gpiote.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_gpiote.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_gpio.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\nrf_drv_config.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\sdk_errors.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\common\nrf_drv_common.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util_platform.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nrf_assert.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage_raw.c)(0x58EC3FCE)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\pstorage_raw.o --omf_browse .\_build\pstorage_raw.crf --depend .\_build\pstorage_raw.d)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\pstorage\pstorage.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\pstorage_platform.h)(0x58EC3FCF)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nrf_assert.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\util\app_error.c)(0x59BA2A2E)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\app_error.o --omf_browse .\_build\app_error.crf --depend .\_build\app_error.d)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c)(0x5A69B223)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\app_scheduler.o --omf_browse .\_build\app_scheduler.crf --depend .\_build\app_scheduler.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\scheduler\app_scheduler.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nrf_assert.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util_platform.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\timer\app_timer.c)(0x58EC3FD3)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_delay.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util_platform.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\timer\app_timer_appsh.c)(0x58EC3FD3)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\app_timer_appsh.o --omf_browse .\_build\app_timer_appsh.crf --depend .\_build\app_timer_appsh.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer_appsh.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\scheduler\app_scheduler.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader.c)(0x5A69B1B7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\bootloader.o --omf_browse .\_build\bootloader.crf --depend .\_build\bootloader.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_types.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_types.h)(0x5A685D4A)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_settings.h)(0x58EC3FD6)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_transport.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\crc16\crc16.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\pstorage\pstorage.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\pstorage_platform.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\scheduler\app_scheduler.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\hal\nrf_delay.h)(0x58EC3FCF)
+F (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_settings.c)(0x5A69B3E7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\bootloader_settings.o --omf_browse .\_build\bootloader_settings.crf --depend .\_build\bootloader_settings.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_settings.h)(0x58EC3FD6)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_types.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_types.h)(0x5A685D4A)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_util.c)(0x58EC3FD7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\bootloader_util.o --omf_browse .\_build\bootloader_util.crf --depend .\_build\bootloader_util.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_util.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_types.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\..\..\..\..\..\components\libraries\crc16\crc16.c)(0x58EC3FD7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\crc16.o --omf_browse .\_build\crc16.crf --depend .\_build\crc16.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\crc16\crc16.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_init_template.c)(0x58EC3FD7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\dfu_init_template.o --omf_browse .\_build\dfu_init_template.crf --depend .\_build\dfu_init_template.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_init.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_types.h)(0x5A685D4A)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\crc16\crc16.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_single_bank.c)(0x58EC3FD3)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\dfu_single_bank.o --omf_browse .\_build\dfu_single_bank.crf --depend .\_build\dfu_single_bank.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_types.h)(0x5A685D4A)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_bank_internal.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\bootloader_types.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\pstorage\pstorage.h)(0x58EC3FCE)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\pstorage_platform.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_mbr.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_init.h)(0x58EC3FD3)
+F (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_transport_serial.c)(0x58EC3FD7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\dfu_transport_serial.o --omf_browse .\_build\dfu_transport_serial.crf --depend .\_build\dfu_transport_serial.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_transport.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\bootloader_dfu\dfu_types.h)(0x5A685D4A)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_deprecated.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\libraries\hci\hci_transport.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\scheduler\app_scheduler.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\libraries\hci\hci_mem_pool.c)(0x58EC3FD7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\hci_mem_pool.o --omf_browse .\_build\hci_mem_pool.crf --depend .\_build\hci_mem_pool.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\hci\hci_mem_pool.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\dfu_single_bank_serial_s110_pca10028\hci_mem_pool_internal.h)(0x58EC3FCF)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\..\..\..\..\..\components\libraries\hci\hci_slip.c)(0x5A684700)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\hci_slip.o --omf_browse .\_build\hci_slip.crf --depend .\_build\hci_slip.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\hci\hci_slip.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\dfu_single_bank_serial_s110_pca10028\hci_transport_config.h)(0x5A69B366)
+I (C:\wangnan\SVN\51822_COS\components\drivers_nrf\uart\app_uart.h)(0x58EC3FCF)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util_platform.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+F (..\..\..\..\..\..\components\libraries\hci\hci_transport.c)(0x58EC3FD7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\hci_transport.o --omf_browse .\_build\hci_transport.crf --depend .\_build\hci_transport.d)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\dfu_single_bank_serial_s110_pca10028\hci_transport_config.h)(0x5A69B366)
+I (C:\wangnan\SVN\51822_COS\components\libraries\hci\hci_transport.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\hci\hci_slip.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\crc16\crc16.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\libraries\hci\hci_mem_pool.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\Example\bootloader\config\dfu_single_bank_serial_s110_pca10028\hci_mem_pool_internal.h)(0x58EC3FCF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\timer\app_timer.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+F (..\..\..\..\..\..\components\libraries\util\nrf_assert.c)(0x58EC3FD7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\nrf_assert.o --omf_browse .\_build\nrf_assert.crf --depend .\_build\nrf_assert.d)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nrf_assert.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+F (..\..\..\..\..\..\components\softdevice\s110\doc\s110_nrf51_8.0.0_licence-agreement.txt)(0x58EC3FD2)()
+F (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.c)(0x58EC3FD3)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_ranges.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_types.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_l2cap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_err.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatt.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gattc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatts.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nrf_assert.h)(0x58EC3FD7)
+F (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.c)(0x58EC3FD3)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork -I..\..\..\config\dfu_single_bank_serial_s110_pca10028 -I..\..\..\config -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\hci_transport -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\softdevice\s110\headers -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\device -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\hci\config -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\drivers_nrf\uart -I..\..\..\..\..\..\components\drivers_nrf\gpiote -I..\..\..\..\..\..\components\drivers_nrf\config -I..\..\..\..\..\..\components\drivers_nrf\common --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS110 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0 -o .\_build\softdevice_handler_appsh.o --omf_browse .\_build\softdevice_handler_appsh.crf --depend .\_build\softdevice_handler_appsh.d)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x58EC3FD3)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\nordic_common.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_svc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51.h)(0x58EC3FDF)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cm0.h)(0x512C1E62)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x595205B1)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmInstr.h)(0x51BA6374)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include\core_cmFunc.h)(0x512C1E62)
+I (C:\wangnan\SVN\51822_COS\components\toolchain\system_nrf51.h)(0x58EC3FCD)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_soc.h)(0x58EC3FD2)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\wangnan\SVN\51822_COS\components\device\nrf51_bitfields.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_soc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\nrf_error_sdm.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_error.h)(0x59BA1E49)
+I (C:\wangnan\SVN\51822_COS\components\libraries\util\app_util.h)(0x58EC3FD7)
+I (C:\wangnan\SVN\51822_COS\components\device\compiler_abstraction.h)(0x58EC3FDF)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_ranges.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_types.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_l2cap.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_err.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatt.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gattc.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\s110\headers\ble_gatts.h)(0x58EC3FD2)
+I (C:\wangnan\SVN\51822_COS\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x58EC3FD3)
+I (C:\wangnan\SVN\51822_COS\components\libraries\scheduler\app_scheduler.h)(0x58EC3FD7)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)

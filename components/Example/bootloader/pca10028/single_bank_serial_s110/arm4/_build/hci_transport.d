@@ -1,0 +1,16 @@
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\hci\hci_transport.c
+.\_build\hci_transport.o: ..\..\..\config\dfu_single_bank_serial_s110_pca10028\hci_transport_config.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\hci\hci_transport.h
+.\_build\hci_transport.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\softdevice\s110\headers\nrf_error.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\hci\hci_slip.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\crc16\crc16.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\hci\hci_mem_pool.h
+.\_build\hci_transport.o: ..\..\..\config\dfu_single_bank_serial_s110_pca10028\hci_mem_pool_internal.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\util\nordic_common.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\device\compiler_abstraction.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\util\app_util.h
+.\_build\hci_transport.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\timer\app_timer.h
+.\_build\hci_transport.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\_build\hci_transport.o: ..\..\..\..\..\..\components\libraries\util\app_error.h

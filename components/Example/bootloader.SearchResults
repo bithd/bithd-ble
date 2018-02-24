@@ -1,0 +1,6 @@
+---- flash_word_write Matches (5 in 1 files) ----
+Ble_flash.c (e:\workspace\20151030_nordic_band\doc\nrf51_sdk_9.0.0_2e23562\components\drivers_nrf\ble_flash):static void flash_word_write(uint32_t * p_address, uint32_t value)
+Ble_flash.c (e:\workspace\20151030_nordic_band\doc\nrf51_sdk_9.0.0_2e23562\components\drivers_nrf\ble_flash):    flash_word_write(p_address, value);
+Ble_flash.c (e:\workspace\20151030_nordic_band\doc\nrf51_sdk_9.0.0_2e23562\components\drivers_nrf\ble_flash):        flash_word_write(p_address, p_in_array[i]);
+Ble_flash.c (e:\workspace\20151030_nordic_band\doc\nrf51_sdk_9.0.0_2e23562\components\drivers_nrf\ble_flash):    flash_word_write(p_page + 1, (uint32_t)(word_count));
+Ble_flash.c (e:\workspace\20151030_nordic_band\doc\nrf51_sdk_9.0.0_2e23562\components\drivers_nrf\ble_flash):    flash_word_write(p_page, flash_header);
