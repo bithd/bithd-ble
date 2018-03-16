@@ -132,6 +132,20 @@ void setup_balance_f(unsigned char* value)
 	Send_bluetoothdata(1);
 }
 
+void setup_timeout_f(unsigned char* value)
+{
+	unsigned int i=value[0]*10000;
+	unsigned int timeout=APP_TIMER_TICKS(i, APP_TIMER_PRESCALER);
+
+  if(i!=0)
+	{
+	app_timer_stop(Timeout3Sec_id); 
+	app_timer_start(Timeout3Sec_id,timeout, NULL);
+	Timeout3Sec_StarFlag=TimeOpen; 
+	Send_bluetoothdata(1);		
+	}
+
+}
 /**************************************************
 seting cmd manage function
 ***************************************************/
@@ -146,6 +160,8 @@ if(KEYwork_flag==0)
 			break;
 			
 			case setup_balance:        setup_balance_f(&communicationBluetooth.data[1]);
+			break;
+			case setup_timeout:        setup_timeout_f(&communicationBluetooth.data[1]);
 			break;
 		}		
 	}

@@ -6,7 +6,8 @@
 #define recivestatus_cmdid 9  
 
 #define setup_time            0x01  
-#define setup_balance         0x02  
+#define setup_balance         0x02 
+#define setup_timeout         0x03
 
 typedef struct BluetoothDataStruct		
 {
