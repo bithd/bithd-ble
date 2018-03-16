@@ -8,6 +8,8 @@
 #define setup_time            0x01  
 #define setup_balance         0x02 
 #define setup_timeout         0x03
+#define setup_getpower        0x04
+
 
 typedef struct BluetoothDataStruct		
 {

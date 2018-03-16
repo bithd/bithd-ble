@@ -146,6 +146,20 @@ void setup_timeout_f(unsigned char* value)
 	}
 
 }
+
+void setup_getpower_f(unsigned char* value)
+{
+	uint8_t batlvl=0;
+	if(adc_sample<Lowest_Voltage){batlvl=0;}
+	else
+	{
+		if(adc_sample<Full_Voltage){batlvl=(adc_sample-Lowest_Voltage)*100/(Full_Voltage-Lowest_Voltage);}//get battery level
+		else{batlvl=100;}
+	}
+	communicationBluetooth.data[1]=batlvl;	
+	Send_bluetoothdata(2);
+
+}
 /**************************************************
 seting cmd manage function
 ***************************************************/
@@ -161,7 +175,11 @@ if(KEYwork_flag==0)
 			
 			case setup_balance:        setup_balance_f(&communicationBluetooth.data[1]);
 			break;
+			
 			case setup_timeout:        setup_timeout_f(&communicationBluetooth.data[1]);
+			break;
+
+			case setup_getpower:       setup_getpower_f(&communicationBluetooth.data[1]);
 			break;
 		}		
 	}
