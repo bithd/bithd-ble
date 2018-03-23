@@ -160,6 +160,18 @@ void setup_getpower_f(unsigned char* value)
 	Send_bluetoothdata(2);
 
 }
+
+void setup_getversion_f(unsigned char* value)
+{
+
+	communicationBluetooth.data[1]=version_0;	
+	communicationBluetooth.data[2]=version_1;
+	communicationBluetooth.data[3]=version_2;
+	Send_bluetoothdata(4);
+
+}
+
+
 /**************************************************
 seting cmd manage function
 ***************************************************/
@@ -181,6 +193,10 @@ if(KEYwork_flag==0)
 
 			case setup_getpower:       setup_getpower_f(&communicationBluetooth.data[1]);
 			break;
+			
+			case setup_getversion:     setup_getversion_f(&communicationBluetooth.data[1]);
+			break;
+
 		}		
 	}
 	
