@@ -18,7 +18,7 @@ void BlueUPfirmware(void * p_event_data, uint16_t event_size)
 			{}
 			else
 			{
-				app_timer_start(Timeout3Sec_id,T_blue_TimeOut, NULL);
+				app_timer_start(Timeout3Sec_id,T_update_TimeOut, NULL);
 				Timeout3Sec_StarFlag=TimeOpen;                         
 			}
 

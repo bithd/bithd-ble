@@ -31,6 +31,7 @@
 
 #define   T_3SECOND_TimeOut        APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)
 #define   T_blue_TimeOut        APP_TIMER_TICKS(60000, APP_TIMER_PRESCALER)
+#define   T_update_TimeOut        APP_TIMER_TICKS(1200000, APP_TIMER_PRESCALER)
 #define   KeepTouchTime            60                                  
 #define   T_1SECOND_TimeOut        APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)
 #define   T_10SECOND_TimeOut       APP_TIMER_TICKS(10000, APP_TIMER_PRESCALER)
