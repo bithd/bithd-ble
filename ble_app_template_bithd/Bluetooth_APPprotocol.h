@@ -12,6 +12,7 @@
 #define setup_timeout         0x03
 #define setup_getpower        0x04
 #define setup_getversion      0x05
+#define setup_turnoff         0x06
 
 
 typedef struct BluetoothDataStruct		

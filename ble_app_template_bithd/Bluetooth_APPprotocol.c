@@ -171,6 +171,17 @@ void setup_getversion_f(unsigned char* value)
 
 }
 
+void setup_turnoff_f(void)
+{
+	app_timer_stop(Timeout3Sec_id);                                 //stop timer
+	Timeout3Sec_StarFlag=TimeClose;                                 //clear flag
+	Time_stuts=TimeDataDisPl;
+
+	Main_status=Main_status_closeoled;                              //states chang to shutdown mode
+	PowerOff_key();                                                 //stm32 power off
+	Send_bluetoothdata(1);
+}
+
 
 /**************************************************
 seting cmd manage function
@@ -196,7 +207,9 @@ if(KEYwork_flag==0)
 			
 			case setup_getversion:     setup_getversion_f(&communicationBluetooth.data[1]);
 			break;
-
+			
+			case setup_turnoff:        setup_turnoff_f();
+      break;
 		}		
 	}
 	
