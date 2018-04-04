@@ -392,9 +392,19 @@ void flashwriteread_F(void)
 	}
 }
 
+
 void bluetoothupdate_F(void)
 {
-  sd_power_gpregret_set(0xb1);
+	unsigned char i;
+
+	Send_bluetoothdata(1);
+	app_sched_event_put(NULL,NULL, Bluetooth_ReciveANDSend);
+	
+	for(i=0;i<20;i++){
+	app_sched_execute(); 
+  sd_app_evt_wait();  
+	}
+	sd_power_gpregret_set(0xb1);
 	NVIC_SystemReset();
 }
 ///////////////////////////////////////FLASH read or write END//////////////////////////
@@ -434,7 +444,7 @@ void Bluetooth_CmdProcess(void * p_event_data, uint16_t event_size)
 			if(recivestatus_cmdid!=communicationBluetooth.cmd_id[0])
 			{                                                      
 				CMD09_oldlabel=communicationBluetooth.label[0];        
-				if(1)//!bluetoothjudge_crc16())                           
+				if(!bluetoothjudge_crc16())                           
 				{                                                   
 					CMD09_SW[0]=0x90;                                  
 					BluetoothWork(); //work according cmd
