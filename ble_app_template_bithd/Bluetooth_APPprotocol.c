@@ -83,6 +83,7 @@ void setup_time_f(unsigned char* value)
 	{
 		if(Ack_recive_enable==0)
 		{
+			  KEYwork_flag=0;
 			Main_status=Main_status_timedisplay;    
 			g_apdu[stm32uartBUFstar]=timerstm32;//send cmd ,enter timer display mode
 			CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);

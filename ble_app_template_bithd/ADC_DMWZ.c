@@ -89,7 +89,7 @@ void Chargingandmanagerdisplay(void * p_event_data, uint16_t event_size)
 
 				g_apdu[stm32uartBUFstar]=timerstm32;   //stm32 entern time display
 				CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);
-
+        KEYwork_flag=0;
 				Main_status=Main_status_timedisplay;   
 			}
 			else
@@ -99,7 +99,8 @@ void Chargingandmanagerdisplay(void * p_event_data, uint16_t event_size)
 	else
 	{
 		if(USB_ChangingFLAG==USBChanged)           //USB Just remove ?
-		{                                          //just remove usb
+		{                         			//just remove usb
+			KEYwork_flag=0;
 			Main_status=Main_status_timedisplay;   
 			nrf_gpio_pin_clear(SlectPin);
 			firmwaredownload_GPIO_H();             //entern APP mode
@@ -123,7 +124,7 @@ void Chargingandmanagerdisplay(void * p_event_data, uint16_t event_size)
 
 					g_apdu[stm32uartBUFstar]=timerstm32;
 					CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);
-
+          KEYwork_flag=0;
 					Main_status=Main_status_timedisplay;
 				}
 				else
@@ -136,7 +137,7 @@ void Chargingandmanagerdisplay(void * p_event_data, uint16_t event_size)
 						g_apdu[stm32uartBUFstar]=timerstm32;
 						CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);
 						Main_status=Main_status_timedisplay;   					
-					
+					  KEYwork_flag=0;
 						touch_key=KEY_NO; 
 						KeyWorkflag=1;						
 					}

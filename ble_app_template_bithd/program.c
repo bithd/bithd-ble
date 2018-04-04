@@ -47,7 +47,7 @@ void Bluetooyparingdisplay(void * p_event_data, uint16_t event_size)
 
 				CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);
 				Main_status=Main_status_timedisplay;
-
+        KEYwork_flag=0;
 				Ble_AuthFlag=BLE_AuthFail;
 			}
 		}

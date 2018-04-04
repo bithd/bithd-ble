@@ -12,12 +12,14 @@ void progam_closeoled(void * p_event_data, uint16_t event_size)
 		
 		if(USB_connectFLag!=USBDisconnect)   
 		{
+			  KEYwork_flag=0;
      		Main_status=Main_status_timedisplay;
 		 	g_apdu[stm32uartBUFstar]=timerstm32;
      		CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);
 	  	}
 		else
 		{
+			  KEYwork_flag=0;
 			Main_status=Main_status_timedisplay;  
 			g_apdu[stm32uartBUFstar]=timerstm32;
 			CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);
@@ -39,6 +41,7 @@ void progam_closeoled(void * p_event_data, uint16_t event_size)
 			}
 			else
 			{
+				  KEYwork_flag=0;
 				Main_status=Main_status_timedisplay; 
 				g_apdu[stm32uartBUFstar]=timerstm32;
 				CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);

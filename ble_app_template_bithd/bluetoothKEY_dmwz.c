@@ -24,7 +24,8 @@ void BlueUPfirmware(void * p_event_data, uint16_t event_size)
 		Timeout3Sec_StarFlag=TimeClose;
 		g_apdu[stm32uartBUFstar]=timerstm32;
 		CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);
-		Main_status=Main_status_timedisplay;     
+		Main_status=Main_status_timedisplay;
+    KEYwork_flag=0;		
 	}
 	
 }
