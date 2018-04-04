@@ -69,7 +69,10 @@ void f_BalanceDisplay(void)
 			touch_key=KEY_NO;                                                                            //clear flag
 			KeyWorkflag=1;                                                                               //button touch have been dell			
 			memcpy(&g_apdu[stm32uartBUFstar],&DEVICE_NAME[5],12);
-			CmdSendUart(BlueNameCmd,&g_apdu[stm32uartBUFstar],12);		                                 //send bluetooth name
+			g_apdu[stm32uartBUFstar+12]=version_0;
+			g_apdu[stm32uartBUFstar+13]=version_1;
+			g_apdu[stm32uartBUFstar+14]=version_2;
+			CmdSendUart(BlueNameCmd,&g_apdu[stm32uartBUFstar],15);		                                 //send bluetooth name
 			Time_stuts=BrodcastnameDisplay;					
 	 	}
 	}
