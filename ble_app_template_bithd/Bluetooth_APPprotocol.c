@@ -71,7 +71,7 @@ void setup_time_f(unsigned char* value)
 	time.data |= value[1] << 16;
 	time.data |= value[0] << 24;
 	set_system_clock(time); 
-
+  Send_bluetoothdata(1);
 	if(	poweronkey_flag==0)
 	{
 		firmwaredownload_GPIO_H();      //enter APP mode
