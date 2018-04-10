@@ -189,8 +189,6 @@ seting cmd manage function
 ***************************************************/
 void Setup_F(void)
 {	
-if(KEYwork_flag==0)
-	{
 	   //according different key
 		switch(communicationBluetooth.data[0])
 		{
@@ -211,9 +209,7 @@ if(KEYwork_flag==0)
 			
 			case setup_turnoff:        setup_turnoff_f();
       break;
-		}		
-	}
-	
+		}			
 }
 
 
@@ -309,8 +305,8 @@ void blueKEY_cmdid_F(void)
 			nrf_delay_ms(delaytime);
 			firmwaredownload_GPIO_H();//APP mode
 
-			nrf_gpio_pin_set(SlectPin);
-
+//			nrf_gpio_pin_set(SlectPin);
+      nrf_gpio_pin_clear(SlectPin);
 			PowerOn_key();
 
 			g_apdu[stm32uartBUFstar]=bluekeystm32;
@@ -393,6 +389,13 @@ void flashwriteread_F(void)
 }
 
 
+void firmware_signed_F(void)
+{
+			nrf_gpio_pin_set(SlectPin);
+			PowerOn_key();
+			Main_status=Main_status_firmware;
+}
+
 void bluetoothupdate_F(void)
 {
 	unsigned char i;
@@ -417,7 +420,7 @@ void BluetoothWork(void)
 							&Setup_F,\
 							&flashwriteread_F,\
 							&bluetoothupdate_F,\
-							NULL,\
+							&firmware_signed_F,\
 							NULL,\
 							&blueKEY_cmdid_F,\
 							NULL

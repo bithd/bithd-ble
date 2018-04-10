@@ -78,10 +78,42 @@ void Bluetooyparingdisplay(void * p_event_data, uint16_t event_size)
 }
 
 
-
-
-
-
+void firmwaresigned(void * p_event_data, uint16_t event_size)
+{
+	if(Ble_ConnnectFlag==BLE_connect)
+	{
+		if(Timeout3Sec_StarFlag!=TimeClose)
+		{
+			if(Timeout3Sec_StarFlag==TimeOut)
+			{
+				app_timer_stop(Timeout3Sec_id); 
+				Timeout3Sec_StarFlag=TimeClose;
+        KEYwork_flag=0;
+				Main_status=Main_status_closeoled;
+				PowerOff_key();
+			}
+			else{}
+		}
+		else
+		{
+			app_timer_start(Timeout3Sec_id,T_10SECOND_TimeOut, NULL);
+			Timeout3Sec_StarFlag=TimeOpen;                         
+		}
+	}
+	else
+	{
+		if(Ack_recive_enable==0)
+		{
+			app_timer_stop(Timeout3Sec_id);
+			Timeout3Sec_StarFlag=TimeClose;
+			PowerOff_key();
+      KEYwork_flag=0;
+			Main_status=Main_status_closeoled;
+		}
+	}
+	touch_key=KEY_NO;                 
+	KeyWorkflag=1;                        
+}
 
 
 

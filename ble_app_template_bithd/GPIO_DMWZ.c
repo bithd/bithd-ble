@@ -74,7 +74,7 @@ void PowerOn_key(void)
 	nrf_delay_ms(delaytime);
 	poweronkey_flag=1;
 }
-
+extern unsigned short CRC_old;
 void PowerOff_key(void)
 {
 	poweronkey_flag=0;
@@ -84,6 +84,7 @@ void PowerOff_key(void)
 	{
 		Uart_close();
 	}
+	CRC_old=0;
 }
 
 

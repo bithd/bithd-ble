@@ -88,8 +88,10 @@ void main_loop(void)
 		break;		 
 		case Main_status_blekey:           app_sched_event_put(NULL,0, Bluetooyhkeydisplay);
 		break;		
-		case Main_status_ParingDis:           app_sched_event_put(NULL,0, Bluetooyparingdisplay);
-		break;		 		 
+		case Main_status_ParingDis:        app_sched_event_put(NULL,0, Bluetooyparingdisplay);
+		break;		
+    case Main_status_firmware:         app_sched_event_put(NULL,0, firmwaresigned);
+		break;
 	}
 }
 

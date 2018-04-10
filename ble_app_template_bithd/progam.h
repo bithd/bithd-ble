@@ -6,12 +6,9 @@
 #define Main_status_closeoled         0 
 #define Main_status_changbatlowpower  1 
 #define Main_status_timedisplay       2 
-#define Main_status_countstep         3 
-#define Main_status_messengerQQ       4 
-#define Main_status_usbkey            5 
-#define Main_status_remind            6
+#define Main_status_firmware          3
 #define Main_status_download          7
-#define Main_status_displaylog        8
+
 #define Main_status_blekey            9
 #define Main_status_ParingDis            10 
 
@@ -39,5 +36,6 @@ extern unsigned char Main_status;
 extern unsigned char KEYwork_flag;
 extern unsigned char pstorage_flag;
 extern void Bluetooyparingdisplay(void * p_event_data, uint16_t event_size);
+extern void firmwaresigned(void * p_event_data, uint16_t event_size);
 #endif
 
