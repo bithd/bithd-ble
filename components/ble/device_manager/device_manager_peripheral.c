@@ -2528,6 +2528,7 @@ void dm_ble_evt_handler(ble_evt_t * p_ble_evt)
     dm_event_t  event;
     uint32_t    event_result;
     ble_gap_enc_info_t * p_enc_info = NULL;
+	dm_handle_t handleBondDel;
 
     VERIFY_MODULE_INITIALIZED_VOID();
     VERIFY_APP_REGISTERED_VOID(0);
@@ -2796,6 +2797,19 @@ void dm_ble_evt_handler(ble_evt_t * p_ble_evt)
                             }
 
                             device_context_store(&handle, FIRST_BOND_STORE);
+							
+							//jyj	
+							handleBondDel = handle; 
+							handleBondDel.device_id = handle.device_id + 1; 
+							if(handleBondDel.device_id == DEVICE_MANAGER_MAX_BONDS) 
+							{ 
+								handleBondDel.device_id = 0; 							 
+							} 								
+							 
+							if(m_peer_table[handleBondDel.device_id].id_bitmap != DM_INVALID_ID) 
+							{ 
+								err_code = dm_device_delete(&handleBondDel); 
+							}
                         }
                     }
                 }

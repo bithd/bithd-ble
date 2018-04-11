@@ -41,7 +41,7 @@ void gap_params_init_DMWZ(void)
     
     //set device name
     err_code = sd_ble_gap_device_name_set(&sec_mode,
-                                          (const uint8_t *)DEVICE_NAME,
+                                          (uint8_t *)DEVICE_NAME,
                                           strlen(DEVICE_NAME));
     APP_ERROR_CHECK(err_code);
 
@@ -242,18 +242,13 @@ void ble_stack_init_DMWZ(void)
 
     // Initialize the SoftDevice handler module.
     SOFTDEVICE_HANDLER_INIT(NRF_CLOCK_LFCLKSRC_RC_250_PPM_250MS_CALIBRATION, NULL);
-
-#if defined(S110) || defined(S130)
+	
     // Enable BLE stack.
     ble_enable_params_t ble_enable_params;
     memset(&ble_enable_params, 0, sizeof(ble_enable_params));
-#ifdef S130
-    ble_enable_params.gatts_enable_params.attr_tab_size   = BLE_GATTS_ATTR_TAB_SIZE_DEFAULT;
-#endif
     ble_enable_params.gatts_enable_params.service_changed = IS_SRVC_CHANGED_CHARACT_PRESENT; 
     err_code = sd_ble_enable(&ble_enable_params);
     APP_ERROR_CHECK(err_code);
-#endif
 
     // Register with the SoftDevice handler module for BLE events.
     err_code = softdevice_ble_evt_handler_set(ble_evt_dispatch);
@@ -288,7 +283,8 @@ void ble_stack_init_DMWZ(void)
     }
     else
     {}
-    
+
+	#if 0
     if (p_event->event_id == DM_EVT_DEVICE_CONTEXT_STORED)
     {
         table_index_t table_index;
@@ -334,6 +330,8 @@ void ble_stack_init_DMWZ(void)
              APP_ERROR_CHECK(err_code);
          }
     }
+	#endif
+	
     return NRF_SUCCESS;
 }
 
@@ -353,8 +351,8 @@ void device_manager_init_DMWZ(bool erase_bonds)
     memset(&register_param.sec_param, 0, sizeof(ble_gap_sec_params_t));
 
     register_param.sec_param.bond         = SEC_PARAM_BOND;
-    register_param.sec_param.mitm         = 1;//SEC_PARAM_MITM;
-    register_param.sec_param.io_caps      = 1;//SEC_PARAM_IO_CAPABILITIES;
+    register_param.sec_param.mitm         = SEC_PARAM_MITM;
+    register_param.sec_param.io_caps      = SEC_PARAM_IO_CAPABILITIES;
     register_param.sec_param.oob          = SEC_PARAM_OOB;
     register_param.sec_param.min_key_size = SEC_PARAM_MIN_KEY_SIZE;
     register_param.sec_param.max_key_size = SEC_PARAM_MAX_KEY_SIZE;
