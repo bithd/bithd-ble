@@ -248,10 +248,9 @@ void Uart_cmdprogam(void)
 				uart_waitack_flag=1;
 		break;	
 		case 0x05:
-				communicationBluetooth.data[1]=0x00ff&((uart_communicate_buf.length-4)>>8);
-				communicationBluetooth.data[2]=0x00ff&(uart_communicate_buf.length-4);
-				memcpy(&communicationBluetooth.data[3],uart_communicate_buf.data,(uart_communicate_buf.length-4));
-				Send_bluetoothdata(uart_communicate_buf.length-1); 	
+				communicationBluetooth.data[0]=uart_communicate_buf.data[0];
+				communicationBluetooth.data[1]=uart_communicate_buf.data[1];
+				Send_bluetoothdata(2); 	
 				uart_waitack_flag=1;
 		break;		
 	}

@@ -394,7 +394,7 @@ void advertising_init_DMWZ(void)
 
 unsigned char mac_ascii[24];
 unsigned char mac[6]={0x42,0x13,0xc7,0x98,0x95,0x1a}; //Device MAC address
-unsigned char DEVICE_NAME[20]="bithd";//"bithd001122334455";
+unsigned char DEVICE_NAME[20]="BITHD";//"bithd001122334455";
 
 /***************************************************************
 Seting Mac address
