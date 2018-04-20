@@ -299,7 +299,7 @@ void blueKEY_cmdid_F(void)
 		app_timer_stop(Timeout3Sec_id);      
 		Timeout3Sec_StarFlag=TimeClose;
 
-		if(communicationBluetooth.data[1]==0x01&&KEYwork_flag!=1)
+		if(communicationBluetooth.data[1]==0x01)//&&KEYwork_flag!=1)
 		{
 			PowerOff_key();
 			nrf_delay_ms(delaytime);
@@ -314,7 +314,7 @@ void blueKEY_cmdid_F(void)
 			KEYwork_flag=1;
 			Main_status=Main_status_blekey;
 		}
-		if((communicationBluetooth.data[1]==0x00)&&(KEYwork_flag!=0))
+		if(communicationBluetooth.data[1]==0x00)//&&(KEYwork_flag!=0))
 		{
 			PowerOff_key();
 			nrf_delay_ms(delaytime);
