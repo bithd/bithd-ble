@@ -445,17 +445,20 @@ void Bluetooth_CmdProcess(void * p_event_data, uint16_t event_size)
 			Recive_bluetoothdata_point();                            //analyze data
 																				
 			if(recivestatus_cmdid!=communicationBluetooth.cmd_id[0])
-			{                                                      
-				CMD09_oldlabel=communicationBluetooth.label[0];        
-				if(!bluetoothjudge_crc16())                           
-				{                                                   
-					CMD09_SW[0]=0x90;                                  
-					BluetoothWork(); //work according cmd
-				}
-				else
-				{   
-					CMD09_SW[0]=0x67;                           
-				}
+			{      
+        if(CMD09_oldlabel!=communicationBluetooth.label[0])	
+				{					
+					CMD09_oldlabel=communicationBluetooth.label[0];        
+					if(!bluetoothjudge_crc16())                           
+					{                                                   
+						CMD09_SW[0]=0x90;                                  
+						BluetoothWork(); //work according cmd
+					}
+					else
+					{   
+						CMD09_SW[0]=0x67;                           
+					}
+			  }
 			}
 			else
 			{
