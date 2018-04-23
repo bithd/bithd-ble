@@ -20,7 +20,7 @@
 #define uart_first_0x5a  8
 #define uart_secend_0xa5 9
 
-#define MAX_resend 3 
+#define MAX_resend 10 
 
 #define NOACK    0
 #define SuccsACK 1
