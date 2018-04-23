@@ -3,7 +3,7 @@
 
 #define version_0 0x02
 #define version_1 0x00
-#define version_2 0x03
+#define version_2 0x04
 
 #define recivestatus_cmdid 9  
 
