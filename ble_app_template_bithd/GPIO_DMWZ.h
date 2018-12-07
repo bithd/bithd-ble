@@ -7,7 +7,7 @@
 #define USBChanged    1 
 
 
-#define USB_test_PIN        16  
+
 #define KEYpowercontrol_PIN 30  
 #define SlectPin 25
 

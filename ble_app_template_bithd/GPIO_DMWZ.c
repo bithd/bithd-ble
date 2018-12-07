@@ -14,42 +14,38 @@ void gpio_init()
   PowerOff_key();                        
 
 	nrf_gpio_cfg_input(CHG_Status_pin,GPIO_PIN_CNF_PULL_Disabled); 
-
-  nrf_gpio_cfg_input(USB_test_PIN,NRF_GPIO_PIN_NOPULL);   
+ 
 }
 
-void USBTEST_status(void)
-{
-	if(nrf_gpio_pin_read(USB_test_PIN)==1)
-	{
-		if(USB_connectFLag!=USBconnect)
-		{
-			USB_ChangingFLAG=USBChanged;
-		}
-		else
-		{
-			USB_ChangingFLAG=USBnoChanging;
-		}
-    USB_connectFLag=USBconnect;
+//void USBTEST_status(void)
+//{
+//	if(1)
+//	{
+//		if(USB_connectFLag!=USBconnect)
+//		{
+//			USB_ChangingFLAG=USBChanged;
+//		}
+//		else
+//		{
+//			USB_ChangingFLAG=USBnoChanging;
+//		}
+//    USB_connectFLag=USBconnect;
+//   }
+//	else
+//	{
+//		if(USB_connectFLag!=USBDisconnect)
+//		{
+//			USB_ChangingFLAG=USBChanged;
+//		}
+//		else
+//		{
+//			USB_ChangingFLAG=USBnoChanging;
+//		}	
 
-		
-		
-  }
-	else
-	{
-		if(USB_connectFLag!=USBDisconnect)
-		{
-			USB_ChangingFLAG=USBChanged;
-		}
-		else
-		{
-			USB_ChangingFLAG=USBnoChanging;
-		}	
+//    USB_connectFLag=USBDisconnect;
 
-    USB_connectFLag=USBDisconnect;
-
-  }
-}
+//  }
+//}
 
 void firmwaredownload_GPIO_H(void)
 {
