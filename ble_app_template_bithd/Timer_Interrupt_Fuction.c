@@ -1,7 +1,7 @@
 #include "include_all.h"
 
 app_timer_id_t                 m_sec_req_timer_id;
-app_timer_id_t                 m_app_timer_id;
+//app_timer_id_t                 m_app_timer_id;
 app_timer_id_t                 KeepTouch_timer_id;              
 unsigned char                  Touch_timercount=0;               
 app_timer_id_t                 Scan_Touch_timer_id;            
@@ -22,6 +22,9 @@ app_timer_id_t                 balance_id;
 
 app_timer_id_t                 Timeout1Sec_Uart_id;                  
 unsigned char                  Timeout1Sec_Uart_StarFlag=TimeClose;  
+
+app_timer_id_t                 chargestatus_time_id;
+unsigned char                  chargstatustime_flag=0;
 /**@brief Function for the Timer initialization.
  *
  * @details Initializes the timer module. This creates and starts application timers.
@@ -34,8 +37,8 @@ void timers_init(void)
 
     // Create timers.
     uint32_t err_code;
-    err_code = app_timer_create(&m_app_timer_id, APP_TIMER_MODE_REPEATED, timer_timeout_handler);
-    APP_ERROR_CHECK(err_code); 
+//    err_code = app_timer_create(&m_app_timer_id, APP_TIMER_MODE_REPEATED, timer_timeout_handler);
+//    APP_ERROR_CHECK(err_code); 
 
 		err_code = app_timer_create(&KeepTouch_timer_id, APP_TIMER_MODE_REPEATED, timer_touchkey_handler);  
     APP_ERROR_CHECK(err_code);
@@ -67,6 +70,10 @@ void timers_init(void)
 
 		err_code = app_timer_create(&Timeout1Sec_Uart_id, APP_TIMER_MODE_SINGLE_SHOT, TimeOutUart_handler);     
     APP_ERROR_CHECK(err_code);
+		
+		err_code = app_timer_create(&chargestatus_time_id, APP_TIMER_MODE_REPEATED, Timechargestatus_handler);     
+    APP_ERROR_CHECK(err_code);
+		
 }
  
 
@@ -77,26 +84,27 @@ void timers_init(void)
 void application_timers_start(void)
 {
     // YOUR_JOB: Start your timers. below is an example of how to start a timer.
-		app_timer_start(m_app_timer_id, m_app_TIMER_T, NULL);
+//		app_timer_start(m_app_timer_id, m_app_TIMER_T, NULL);
 		app_timer_start(Scan_Touch_timer_id,Touch_TIMER_Scan, NULL);           
     app_timer_start(wallClockID, ONE_SECOND_INTERVAL_, NULL);           
 		app_timer_start(ADCworkID, ADC_INTERVAL, NULL);                    
 		app_timer_start(Timeout2ms_blekey_id, bletimeout_INTERVAL, NULL);     
+//		app_timer_start(chargestatus_time_id, bletimeout_INTERVAL, NULL); 
 }
 
 
 
-void debug_wangnan(void * p_event_data, uint16_t event_size)
-{
-	USBTEST_status();
-}
+//void debug_wangnan(void * p_event_data, uint16_t event_size)
+//{
+//	USBTEST_status();
+//}
 
 
-//debug
-void timer_timeout_handler(void * p_context)
-{
-	app_sched_event_put(NULL,0, debug_wangnan);
-}
+////debug
+//void timer_timeout_handler(void * p_context)
+//{
+//	app_sched_event_put(NULL,0, debug_wangnan);
+//}
 
 void Motor_timeout_handler(void * p_context)
 {
@@ -182,8 +190,85 @@ void TimeOutUart_handler(void * p_context)
 {
 	Timeout1Sec_Uart_StarFlag=TimeOut;
 }
-
-
+#define NoCharg  0
+#define Charging 1
+#define Charged  2
+#define _1200ms_ 1200
+#define _3500ms_ 3500
+unsigned char chargflag=NoCharg;
+unsigned char H_count=0;
+unsigned char L_count=0;
+void Timechargestatus_handler(void * p_context)
+{
+//每隔100ms进入一次中断
+//判断当前状态
+  USB_ChangingFLAG=USBnoChanging;
+  switch(chargflag){
+		case (NoCharg):
+			if(nrf_gpio_pin_read(CHG_Status_pin)==1)
+			{
+				USB_ChangingFLAG=USBChanged;
+				H_count++;
+				USB_connectFLag=USBconnect;
+				chargflag=Charging;
+			}
+			else
+			{
+				app_timer_stop(chargestatus_time_id);
+				chargstatustime_flag=0;
+				H_count=0;
+				L_count=0;
+				USB_connectFLag=USBDisconnect;
+			}
+			break;
+		case (Charging):
+				if(nrf_gpio_pin_read(CHG_Status_pin)==1)
+				{
+					H_count++;
+					L_count=0;
+					USB_ChangingFLAG=USBnoChanging;
+					if(H_count>(_1200ms_/100))
+					{
+						chargflag=Charged;
+						H_count=0;
+					}
+				}
+				else
+				{
+					H_count=0;
+					L_count++;
+					if(L_count>(_1200ms_/100))
+					{
+						chargflag=NoCharg;
+						L_count=0;
+						app_timer_stop(chargestatus_time_id);
+						chargstatustime_flag=0;
+						USB_connectFLag=USBDisconnect;
+					}
+				}
+			break;
+		case (Charged):
+			if(nrf_gpio_pin_read(CHG_Status_pin)==0)
+				{
+					H_count=0;
+					L_count++;
+					if(L_count>(_3500ms_/100))
+					{
+            chargflag=NoCharg;
+						L_count=0;
+						app_timer_stop(chargestatus_time_id);
+						chargstatustime_flag=0;
+						USB_connectFLag=USBDisconnect;
+					}
+				}
+				else
+				{
+					L_count=0;
+					H_count=0;
+				}
+			break;
+   }
+}
 
 
 

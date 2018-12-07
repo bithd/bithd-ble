@@ -19,12 +19,14 @@
 
 #define   ReadStatus_TIMER_Scan  APP_TIMER_TICKS(1000, APP_TIMER_PRESCALER)
 #define   ONE_SECOND_INTERVAL      APP_TIMER_TICKS(1000, APP_TIMER_PRESCALER)
-#define   ONE_SECOND_INTERVAL_     APP_TIMER_TICKS(100, APP_TIMER_PRESCALER)   
+#define   ONE_SECOND_INTERVAL_     APP_TIMER_TICKS(100, APP_TIMER_PRESCALER)
 
 #define   ADC_INTERVAL            APP_TIMER_TICKS(1000, APP_TIMER_PRESCALER) 
 #define   ADC_NOpower             APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)
 
 #define   bletimeout_INTERVAL            APP_TIMER_TICKS(200, APP_TIMER_PRESCALER)   //200ms
+
+#define   _20ms_INTERVAL            APP_TIMER_TICKS(100, APP_TIMER_PRESCALER)   //10ms
 
 #define   motortimeout_INTERVAL          APP_TIMER_TICKS(motortime, APP_TIMER_PRESCALER)   //500ms
 #define   motortimeout_LOOP              APP_TIMER_TICKS(100, APP_TIMER_PRESCALER)
@@ -44,8 +46,10 @@
 
 
 #define m_app_TIMER_T APP_TIMER_TICKS(1000, APP_TIMER_PRESCALER)  //debug ms
+
+
 extern app_timer_id_t            CheckKEY_id;
-extern app_timer_id_t                 m_app_timer_id;
+//extern app_timer_id_t                 m_app_timer_id;
 extern app_timer_id_t                 KeepTouch_timer_id;
 extern unsigned char                  Touch_timercount;
 extern app_timer_id_t                 Scan_Touch_timer_id; 
@@ -65,12 +69,14 @@ extern app_timer_id_t                  Motorloop_id;
 extern app_timer_id_t                  Timeout2ms_blekey_id;
 extern app_timer_id_t                  Timeout1Sec_Uart_id; 
 extern app_timer_id_t                  balance_id; 
+extern app_timer_id_t                 chargestatus_time_id;
 
 extern unsigned char                   Timeout1Sec_Uart_StarFlag;
+extern unsigned char                  chargstatustime_flag;
 void timers_init(void);
 void application_timers_start(void);
 void ADCwork_handler(void * p_context);
-void timer_timeout_handler(void * p_context);
+//void timer_timeout_handler(void * p_context);
 void timer_touchkey_handler(void* p_context);
 void timer_Scantouchkey_handler(void * p_context);
 void ScanStepRead3D_handler(void * p_context);
@@ -86,5 +92,6 @@ void Motor_LOOP_handler(void * p_context);
 void Checkkey_timeout_handler(void * p_context);
 void TimeOutUart_handler(void * p_context);
 void Balance_handler(void * p_context);
+void Timechargestatus_handler(void * p_context);
 
 #endif

@@ -12,7 +12,7 @@ void chargingBat(void)
 	{
 		if(nrf_gpio_pin_read(CHG_Status_pin)==1)             //judge charing state
 		{
-			FullVoltage_flag=1;                              //power is full
+//			FullVoltage_flag=1;                              //power is full
 		}
 		else{}
 	}

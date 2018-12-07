@@ -75,7 +75,16 @@ void main_loop(void)
 	app_sched_event_put(NULL,NULL, Bluetooth_ReciveANDSend); 
 	app_sched_event_put(NULL,NULL, Bluetooth_CmdProcess);   
 	app_sched_event_put(NULL,NULL, UartDataSendrecive);
-
+	
+	if((nrf_gpio_pin_read(CHG_Status_pin)==1)&&(USB_connectFLag==USBDisconnect))
+	{
+		if(chargstatustime_flag==0)
+		{
+			chargstatustime_flag=1;
+			app_timer_start(chargestatus_time_id, _20ms_INTERVAL, NULL);
+		}
+	}
+	
 	switch(Main_status)
 	{
 		case Main_status_closeoled:        app_sched_event_put(NULL,0, progam_closeoled);       
