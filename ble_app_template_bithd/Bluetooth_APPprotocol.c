@@ -1,7 +1,8 @@
 #include "include_all.h"
 
 BluetoothData communicationBluetooth={&g_apdu[0],&g_apdu[1],&g_apdu[3],&g_apdu[4]};//save recive data pointer
-unsigned char CMD09_oldlabel=0;      
+unsigned char CMD09_oldlabel=0;   
+unsigned char oldCRC[2]={0,0};
 unsigned char CMD09_SW[2]={0,0};       
 
 
@@ -446,9 +447,11 @@ void Bluetooth_CmdProcess(void * p_event_data, uint16_t event_size)
 																				
 			if(recivestatus_cmdid!=communicationBluetooth.cmd_id[0])
 			{      
-        if(CMD09_oldlabel!=communicationBluetooth.label[0])	
+        if((CMD09_oldlabel!=communicationBluetooth.label[0])||(communicationBluetooth.crc16[0]!=oldCRC[0])||(communicationBluetooth.crc16[1]!=oldCRC[1]))
 				{					
 					CMD09_oldlabel=communicationBluetooth.label[0];        
+					oldCRC[0]=communicationBluetooth.crc16[0];
+					oldCRC[1]=communicationBluetooth.crc16[1];
 					if(!bluetoothjudge_crc16())                           
 					{                                                   
 						CMD09_SW[0]=0x90;                                  
