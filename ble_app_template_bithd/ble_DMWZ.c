@@ -41,7 +41,7 @@ void gap_params_init_DMWZ(void)
     
     //set device name
     err_code = sd_ble_gap_device_name_set(&sec_mode,
-                                          (uint8_t *)DEVICE_NAME,
+                                          (uint8_t const *)DEVICE_NAME,
                                           strlen(DEVICE_NAME));
     APP_ERROR_CHECK(err_code);
 
@@ -268,8 +268,6 @@ void ble_stack_init_DMWZ(void)
                                            ret_code_t        event_result)
 {
     uint32_t err_code;
-   
-    static bool device_delete_all_started;
 
     // Recovery in the event of DM_DEVICE_CONTEXT_FULL
     if(event_result == DM_DEVICE_CONTEXT_FULL)
@@ -277,8 +275,6 @@ void ble_stack_init_DMWZ(void)
         /* Clear all devices from the bond table*/ 
         err_code = dm_device_delete_all(&m_app_handle);
         APP_ERROR_CHECK(err_code);
-        
-        device_delete_all_started = true;
              
     }
     else
@@ -394,7 +390,7 @@ void advertising_init_DMWZ(void)
 
 unsigned char mac_ascii[24];
 unsigned char mac[6]={0x42,0x13,0xc7,0x98,0x95,0x1a}; //Device MAC address
-unsigned char DEVICE_NAME[20]="BITHD";//"bithd001122334455";
+char DEVICE_NAME[20]="BITHD";//"bithd001122334455";
 
 /***************************************************************
 Seting Mac address

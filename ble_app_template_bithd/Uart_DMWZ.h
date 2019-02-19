@@ -32,6 +32,7 @@
 #define Balancecmd_uart   0x06 
 #define BlueParingDatacmd   0x07 
 #define BlueNameCmd              0x08
+#define SHUTDOWN_SYSTEM			 0x0A
 
 typedef struct
 {
@@ -53,7 +54,7 @@ extern unsigned char uart_waitack_flag;
 unsigned short CRC16_Uart_send(void);
 void uart_init(void);
 void Uart_close(void);
-void uart_send_Bty(unsigned char* buf,unsigned short len);
+void uart_send_Bty(void* buf,unsigned short len);
 void UartDataSendrecive(void * p_event_data, uint16_t event_size);
 void CmdSendUart(unsigned char cmd_uart,unsigned char* apdubuf,unsigned short apdulength);
 #endif

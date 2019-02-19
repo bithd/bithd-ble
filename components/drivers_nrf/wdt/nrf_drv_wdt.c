@@ -20,7 +20,6 @@
 #include <stdint.h>
 
 /**@brief WDT event handler. */
-static nrf_wdt_event_handler_t m_wdt_event_handler;
 
 /**@brief WDT state. */
 static nrf_drv_state_t m_state;
@@ -45,7 +44,6 @@ ret_code_t nrf_drv_wdt_init(nrf_drv_wdt_config_t const * p_config,
                             nrf_wdt_event_handler_t     wdt_event_handler)
 {
     ASSERT(wdt_event_handler != NULL);
-    m_wdt_event_handler = wdt_event_handler;
 
     if (m_state == NRF_DRV_STATE_UNINITIALIZED)
     {

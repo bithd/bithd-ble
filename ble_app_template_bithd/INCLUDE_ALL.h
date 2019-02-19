@@ -12,6 +12,7 @@
 #include "ble_srv_common.h"
 #include "ble_advdata.h"
 #include "ble_advertising.h"
+#include "nrf_drv_wdt.h"
 
 #include "ble_conn_params.h"
 #include "nrf_gpio.h"

@@ -21,12 +21,16 @@ unsigned char ACC_resend=0;
 
 static unsigned short uart_recive_l=0;           
 
-void uart_send_Bty(unsigned char* buf,unsigned short len)
+void uart_send_Bty(void * buf,unsigned short len)
 {
 	unsigned short i;
-	for (i = 0; i < len; i++)
+	unsigned char *pdata;
+
+	pdata = (unsigned char*)buf;
+	
+	for (i = 0; i < len;i++)
     {
-        while(app_uart_put(buf[i]) != NRF_SUCCESS);
+        while(app_uart_put(pdata[i]) != NRF_SUCCESS);
     }
 }
 
