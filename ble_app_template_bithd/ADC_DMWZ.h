@@ -11,9 +11,11 @@
 #define BATTERY_ADC_RESOLUTION  (ADC_CONFIG_RES_10bit)
 #define BATTERY_ADC_DIV         (1023)
 
-#define Full_Voltage             (3900)                     //Full power 4.2V
+#define Full_Voltage             (4100)                     //Full power 4.2V
 #define Warning_Voltage          (3650)                     //warning    3.8V
-#define Lowest_Voltage           (3600)                     //NO power
+#define Lowest_Voltage           (3500)                     //NO power
+#define ADV_BLE_VOLTAGE			 (3450)
+#define DIS_BLE_VOLTAGE			 (3400)
 
 #define ADC_RESULT_IN_MILLI_VOLTS(ADC_VALUE)\
         ((((ADC_VALUE) * ADC_REF_VOLTAGE_IN_MILLIVOLTS)  * ADC_PRE_SCALING_COMPENSATION * ADC_HW_PRE_SCALING_COMPENSATION)/ BATTERY_ADC_DIV)

@@ -12,6 +12,8 @@
 #define Main_status_blekey            9
 #define Main_status_ParingDis            10 
 
+#define ON_STATUS						0
+#define OFF_STATUS						1
 
 #define bluekeystm32 0
 #define timerstm32    1
@@ -30,11 +32,18 @@
 #define No_chose      2
 #define Wait_chose    0
 
+#define BLE_ON_STA		  0
+#define BLE_OFF_STA		  1
+
 #define stm32uartBUFstar 512
 
 extern unsigned char Main_status;
 extern unsigned char KEYwork_flag;
 extern unsigned char pstorage_flag;
+extern unsigned char switch_ble_flag;
+extern unsigned int  close_ble_count;
+extern unsigned char system_status;
+
 extern void Bluetooyparingdisplay(void * p_event_data, uint16_t event_size);
 extern void firmwaresigned(void * p_event_data, uint16_t event_size);
 #endif

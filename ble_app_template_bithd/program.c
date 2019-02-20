@@ -4,6 +4,9 @@
 unsigned char Main_status=Main_status_closeoled;   
 unsigned char KEYwork_flag=0;                  
 unsigned char pstorage_flag=0;                    
+unsigned char switch_ble_flag=BLE_ON_STA;
+unsigned int  close_ble_count = 0;
+unsigned char system_status=ON_STATUS;
 
 void Bluetooyparingdisplay(void * p_event_data, uint16_t event_size)
 {

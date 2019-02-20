@@ -142,6 +142,46 @@ void f_BrodcastnameDisplay(void)
 	else{}
 }
 
+void f_PowerOffDisplay(void)
+{
+	if(touch_key == KEY_LongTouch)
+	{	
+		app_timer_stop(Timeout3Sec_id);  
+		app_timer_start(Timeout3Sec_id,T_5SECOND_TimeOutremind, NULL);
+		touch_key=KEY_NO;						  //clear flag
+		KeyWorkflag=1;							  //button touch have been dell
+		g_apdu[stm32uartBUFstar]=balancestm32;	  //Send cmd to enter balance display
+		CmdSendUart(SHUTDOWN_SYSTEM,&g_apdu[stm32uartBUFstar],1);				
+	}
+	else if(touch_key == KEY_1)//OK
+	{
+		touch_key=KEY_NO;						  //clear flag
+		KeyWorkflag=1;
+		app_timer_stop(Timeout3Sec_id);                                 //stop timer
+		Timeout3Sec_StarFlag=TimeClose;                                 //clear flag
+		Time_stuts=TimeDataDisPl;	
+		Main_status=Main_status_closeoled;                              //states chang to shutdown mode
+
+		app_timer_stop(Motor_id);				  //stop time for Cycle to send
+		flagtimerstm32=0;
+		system_status = OFF_STATUS;
+		switch_ble_flag = BLE_OFF_STA;
+		PowerOff_key();   
+		blueDisconnect();			//disconnect ble with phone
+		nrf_delay_ms(1000);
+		ble_advertising_stop();		//
+	}
+	else if(touch_key == KEY_2)  //Cancel
+	{
+		touch_key=KEY_NO;						  //clear flag
+		KeyWorkflag=1;
+		app_timer_stop(Timeout3Sec_id);                                     //stop time for Shutdown Timeouts
+		Timeout3Sec_StarFlag=TimeClose;
+		g_apdu[stm32uartBUFstar]=timerstm32;                                //Send cmd to enter Time display
+		CmdSendUart(Changestatuscmd_uart,&g_apdu[stm32uartBUFstar],1);		
+		Time_stuts=TimeDataDisPl;	
+	}
+}
 
 void timedisplay(void * p_event_data, uint16_t event_size)
 {
@@ -172,9 +212,16 @@ void timedisplay(void * p_event_data, uint16_t event_size)
 		case BalanceDisplay:       f_BalanceDisplay();
 		break;
 		case BrodcastnameDisplay:  f_BrodcastnameDisplay();
-		break;
-	}
+		break;	 	
+		case POWEROFF_DIS:		   f_PowerOffDisplay();
+	}	
 
+	if(touch_key == KEY_LongTouch)
+	{
+		touch_key=KEY_NO;  
+		Time_stuts = POWEROFF_DIS;
+	}
+	
 	if(Main_status!=Main_status_timedisplay)
 	{
 		app_timer_stop(Timeout3Sec_id);   

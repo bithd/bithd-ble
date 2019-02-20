@@ -16,6 +16,58 @@ static void power_manage(void)
     APP_ERROR_CHECK(err_code);
 }
 
+static void judge_adc_manage_ble(void)
+{
+	static unsigned char adv_en_flag = 0;
+ 	uint32_t err_code;
+ 	
+	if(adc_sample<DIS_BLE_VOLTAGE)
+	{
+		if(adv_en_flag == 0)
+		{
+			adv_en_flag ^= 1;		
+			blueDisconnect();			//disconnect ble with phone
+			nrf_delay_ms(1000);
+			ble_advertising_stop();		//
+		}
+	}
+	else if(adc_sample >= ADV_BLE_VOLTAGE)
+	{
+		if(adv_en_flag == 1)
+		{
+			adv_en_flag = 0;			
+			err_code = ble_advertising_start(BLE_ADV_MODE_FAST);
+			APP_ERROR_CHECK(err_code);
+		}
+	}
+}
+
+static void judge_timeout_manage_ble(void)
+{
+	static unsigned char adv_en_flag = 0;
+	uint32_t err_code;
+	
+	if(switch_ble_flag == BLE_OFF_STA)
+	{
+		if(adv_en_flag == 0)
+		{
+			adv_en_flag ^= 1;
+			blueDisconnect();			//disconnect ble with phone
+			nrf_delay_ms(1000);
+			ble_advertising_stop();		//
+		}
+	}
+	else if(switch_ble_flag == BLE_ON_STA)
+	{
+		if(adv_en_flag == 1)
+		{
+			adv_en_flag = 0;
+			err_code = ble_advertising_start(BLE_ADV_MODE_FAST);
+			APP_ERROR_CHECK(err_code);
+		}
+	}
+	
+}
 #define adress PSTORAGE_DATA_START_ADDR+0x400
 
 static void INIT(void)
@@ -83,7 +135,28 @@ void main_loop(void)
 			chargstatustime_flag=1;
 			app_timer_start(chargestatus_time_id, _20ms_INTERVAL, NULL);
 		}
+	}	
+
+	if(system_status == OFF_STATUS)
+	{
+		if(touch_key == KEY_LongTouch)
+		{		
+			touch_key=KEY_1;						  //clear flag
+			KeyWorkflag=1;							  //button touch have been dell	
+			switch_ble_flag = BLE_ON_STA;
+			system_status = ON_STATUS;
+		}
+		else
+		{
+			return;
+		}
 	}
+	else if(system_status == ON_STATUS)
+	{
+	}
+
+	judge_adc_manage_ble();
+	judge_timeout_manage_ble();
 	
 	switch(Main_status)
 	{

@@ -7,6 +7,8 @@
 #define DAY             86400UL  // 24 hours * 60 minutes * 60 seconds
 #define LENGTH_OF_WEEK      (7)
 #define alarmMAX 8
+#define SECOND_CLOSE_BLE		3600
+
 //2000-01-01 is sat
 #define SYSTEM_ORIGIN_DAY_OF_WEEK (Sat)
 // To be used with

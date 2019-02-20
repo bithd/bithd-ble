@@ -355,6 +355,21 @@ uint32_t ble_advertising_start(ble_adv_mode_t advertising_mode)
     return NRF_SUCCESS;
 }
 
+uint32_t ble_advertising_stop(void)
+{
+	uint32_t err_code;
+	
+	if (m_adv_mode_current != BLE_ADV_MODE_IDLE)
+	{
+		err_code = sd_ble_gap_adv_stop();
+		if(err_code != NRF_SUCCESS)
+		{
+			return err_code;
+		}
+	}
+
+	return NRF_SUCCESS;
+}
 
 void ble_advertising_on_ble_evt(ble_evt_t const * p_ble_evt)
 {

@@ -188,6 +188,8 @@ void ble_TxRx_on_ble_evt(ble_nus_t * p_nus, ble_evt_t * p_ble_evt)
     {
         case BLE_GAP_EVT_CONNECTED:
                                     Ble_ConnnectFlag=BLE_connect;    
+                                    //reset ble count
+									close_ble_count = 0;
                                     on_connect_TxRx(p_nus, p_ble_evt);
          break;
 
@@ -312,7 +314,9 @@ p_data data recive bufer,length recive length
 void BLE_TXRX_handler(ble_nus_t * p_nus, uint8_t * p_data, uint16_t length)
 {
 
-		Recivedataflag=1;                       //have recive data,the flag been set
+	  Recivedataflag=1;                       //have recive data,the flag been set
+	  //reset ble count
+	  close_ble_count = 0;
 	  phone_to_ble_data_parse(p_data,length);   //analysis recive data
 
 }

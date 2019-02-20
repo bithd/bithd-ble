@@ -29,9 +29,10 @@
 
 #define DEAD_BEEF                        0xDEADBEEF                                 /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
 
- 
+#define BLE_Disconnect                    0 
 #define BLE_connect                       1
-#define BLE_Disconnect                    0
+#define BLE_CLOSE						  2
+#define BLE_OPEN						  3
 
 #define BLE_AuthSuccess                   1
 #define BLE_AuthFail                      0
@@ -42,7 +43,7 @@ extern unsigned char ParingDataBuf[6];
 extern unsigned char ParingDataDisFlag;         
 extern unsigned char Ble_AuthFlag;
 
-extern unsigned char DEVICE_NAME[20];
+extern  char DEVICE_NAME[20];
 
 void Mac_address_get(void);
 void ble_stack_init_DMWZ(void);

@@ -102,6 +102,16 @@ void update_wall_clock(void * p_event_data, uint16_t event_size)
     unsigned char buf[16]={0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8};	
     SecondCountRTC++;                           
 
+	if(switch_ble_flag == BLE_ON_STA)
+	{
+		close_ble_count++;
+	}	
+	if(close_ble_count>SECOND_CLOSE_BLE)
+	{
+		close_ble_count = 0;
+		switch_ble_flag = BLE_OFF_STA;
+	}
+
 	  UTCTimeStruct * tm = get_wall_clock_time(); 
 		get_day_of_week(SecondCountRTC);
 
@@ -110,6 +120,12 @@ void update_wall_clock(void * p_event_data, uint16_t event_size)
     if(Main_status==Main_status_closeoled)
 		{
 			  pstorage_times++;
+			  
+			  //low power do not save time datas
+			  if(adc_sample < DIS_BLE_VOLTAGE)
+			  {
+				return;
+			  }
 				if(pstorage_times<60)
 				{}
 				else

@@ -21,7 +21,7 @@
 #define   ONE_SECOND_INTERVAL      APP_TIMER_TICKS(1000, APP_TIMER_PRESCALER)
 #define   ONE_SECOND_INTERVAL_     APP_TIMER_TICKS(100, APP_TIMER_PRESCALER)
 
-#define   ADC_INTERVAL            APP_TIMER_TICKS(1000, APP_TIMER_PRESCALER) 
+#define   ADC_INTERVAL            APP_TIMER_TICKS(10000, APP_TIMER_PRESCALER) 
 #define   ADC_NOpower             APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)
 
 #define   bletimeout_INTERVAL            APP_TIMER_TICKS(200, APP_TIMER_PRESCALER)   //200ms
@@ -34,11 +34,11 @@
 #define   T_3SECOND_TimeOut        APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)
 #define   T_blue_TimeOut        APP_TIMER_TICKS(60000, APP_TIMER_PRESCALER)
 #define   T_update_TimeOut        APP_TIMER_TICKS(1200000, APP_TIMER_PRESCALER)
-#define   KeepTouchTime            60                                  
+#define   KeepTouchTime            5                          
 #define   T_1SECOND_TimeOut        APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)
 #define   T_10SECOND_TimeOut       APP_TIMER_TICKS(10000, APP_TIMER_PRESCALER)
 #define   T_3SECOND_TimeOutremind  APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)
-#define   T_5SECOND_TimeOutremind  APP_TIMER_TICKS(5000, APP_TIMER_PRESCALER)
+#define   T_5SECOND_TimeOutremind  APP_TIMER_TICKS(7000, APP_TIMER_PRESCALER)
 #define   T_60SECOND_TimeOutremind  APP_TIMER_TICKS(60000, APP_TIMER_PRESCALER)
 #define   T_5Mini_TimeOutremind  APP_TIMER_TICKS(300000, APP_TIMER_PRESCALER)
 

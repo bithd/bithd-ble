@@ -5,6 +5,7 @@
 #define TimeDataDisPl       0
 #define BalanceDisplay      1
 #define BrodcastnameDisplay 2
+#define POWEROFF_DIS		3
 
 #define balance_storgeblock 0
 #define balnace_usefsize 59

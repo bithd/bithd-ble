@@ -10,9 +10,17 @@ void Read_CapKey(void * p_event_data, uint16_t event_size)
 {
 	if((nrf_gpio_pin_read(CAPSENCE_INT_PIN)==0)||((nrf_gpio_pin_read(6)==0)))  
 	{
+		//reset ble count and status
+		close_ble_count = 0;
+		switch_ble_flag = BLE_ON_STA;
+		
 		if(KeyWorkflag==0)
 		{
-			touch_key_flag=1;      
+			touch_key_flag=1;      			
+			if((Time_stuts == POWEROFF_DIS)&&(nrf_gpio_pin_read(CAPSENCE_INT_PIN)==0))
+			{
+				touch_key=KEY_2;	
+			}
 
 			if(KeepTouch_timer_flag!=1) 
 			{                  
@@ -22,15 +30,18 @@ void Read_CapKey(void * p_event_data, uint16_t event_size)
 			}
 			else      
 			{
-				if(Touch_timercount<KeepTouchTime)
-				{}
-				else
+				if(nrf_gpio_pin_read(6)==0)
 				{
-					app_timer_stop(KeepTouch_timer_id);
-					KeepTouch_timer_flag=0;
-					touch_key=KEY_LongTouch;
-					touch_key_flag=0x00;  
-				}
+					if(Touch_timercount<KeepTouchTime)
+					{}
+					else
+					{
+						app_timer_stop(KeepTouch_timer_id);
+						KeepTouch_timer_flag=0;
+						touch_key=KEY_LongTouch;
+						touch_key_flag=0x00;  
+					}
+				}				
 			}
 		}         
 	}
