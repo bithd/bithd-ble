@@ -146,6 +146,11 @@ void main_loop(void)
 			switch_ble_flag = BLE_ON_STA;
 			system_status = ON_STATUS;
 		}
+		else if(USB_connectFLag == USBconnect)
+		{
+			switch_ble_flag = BLE_ON_STA;
+			system_status = ON_STATUS;
+		}
 		else
 		{
 			return;
